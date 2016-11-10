@@ -8,21 +8,18 @@ Validates the rcpt_to addresses (recipient addresses) by connecting to a Postgre
 
 ## Install
 
-```
     cd /my/haraka/config/dir
     npm install haraka-plugin-rcpt-postgresql
-```
 
-## Enable
+### Enable
 
-To enable this plugin add the following line to the `config/plugins` file.
+Add the following line to the `config/plugins` file.
 
-`rcpt_to.postgresql`
+`rcpt-postgresql`
 
 ## Config
 
-The `rcpt_to.postgresql.json` file has the following structure (defaults shown). Also note that this file will need
-to be created, if not present, in the `config` directory.
+The `rcpt-postgresql.json` file has the following structure (defaults shown). Also note that this file will need to be created, if not present, in the `config` directory.
 
 ```javascript
 {
@@ -37,11 +34,6 @@ to be created, if not present, in the `config` directory.
 }
 ```
 
-## Dependencies
-
-This plugin depends on the following libraries.
-
-* pg ^6.1.0
 
 [ci-img]: https://travis-ci.org/haraka/haraka-plugin-rcpt-postgresql.svg
 [ci-url]: https://travis-ci.org/haraka/haraka-plugin-rcpt-postgresql
