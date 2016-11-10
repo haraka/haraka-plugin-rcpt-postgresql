@@ -4,12 +4,14 @@
  * Plugin to validate the email recipient via a posgresql database.
  */
 
-var util = require('util');
-var pg = require('pg');
+var pg        = require('pg');
+var util      = require('util');
+
+var constants = require('haraka-constants');
 
 exports.register = function () {
     this.logdebug("Initializing rcpt_to postgresql plugin.");
-    var config = this.config.get('rcpt_to.postgresql.json');
+    var config = this.config.get('rcpt-postgresql.json');
 
     var dbConfig = {
         user: config.user,
@@ -47,7 +49,7 @@ exports.hook_rcpt = function (next, connection, params) {
             next();
         } else {
             connection.logdebug("Invalid email recipient. DENY email receipt.", this);
-            next(DENY, "Invalid email address.");
+            next(constants.DENY, "Invalid email address.");
         }
     });
 };
