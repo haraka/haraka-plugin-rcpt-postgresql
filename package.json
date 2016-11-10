@@ -31,6 +31,7 @@
   },
   "devDependencies": {
     "eslint": "*",
-    "haraka-test-fixtures": "*"
+    "haraka-test-fixtures": "*",
+    "mocha": "^3.1.2"
   }
 }
