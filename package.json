@@ -1,0 +1,36 @@
+{
+  "name": "haraka-plugin-rcpt-postgresql",
+  "version": "1.0.0",
+  "description": "Haraka plugin that validates recipients against a PostgreSQL database",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "lint": "./node_modules/.bin/eslint *.js test/*.js",
+    "cover": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haraka/haraka-plugin-rcpt-postgresql.git"
+  },
+  "keywords": [
+    "Haraka",
+    "plugin",
+    "recipient",
+    "rcpt",
+    "postgres",
+    "postgresql"
+  ],
+  "author": "Thihara Neranjya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/haraka/haraka-plugin-rcpt-postgresql/issues"
+  },
+  "homepage": "https://github.com/haraka/haraka-plugin-rcpt-postgresql#readme",
+  "dependencies": {
+    "pg": "^6.1.0"
+  },
+  "devDependencies": {
+    "eslint": "*",
+    "haraka-test-fixtures": "*"
+  }
+}
