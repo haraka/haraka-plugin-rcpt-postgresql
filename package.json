@@ -1,6 +1,6 @@
 {
   "name": "haraka-plugin-rcpt-postgresql",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Haraka plugin that validates recipients against a PostgreSQL database",
   "main": "index.js",
   "scripts": {
