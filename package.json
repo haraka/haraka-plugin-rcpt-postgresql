@@ -31,7 +31,7 @@
     "pg": "^6.1.0"
   },
   "devDependencies": {
-    "eslint": "*",
+    "eslint": ">=3.14.0",
     "haraka-test-fixtures": "*",
     "mocha": "*"
   }
