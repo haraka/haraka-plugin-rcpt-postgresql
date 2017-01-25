@@ -1,5 +1,6 @@
 [![Build Status][ci-img]][ci-url]
 [![Code Climate][clim-img]][clim-url]
+[![Greenkeeper badge](https://badges.greenkeeper.io/haraka/haraka-plugin-rcpt-postgresql.svg)](https://greenkeeper.io/)
 [![NPM][npm-img]][npm-url]
 
 # haraka-plugin-rcpt-postgresql
