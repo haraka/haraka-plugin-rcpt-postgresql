@@ -4,6 +4,8 @@
 
 # haraka-plugin-rcpt-postgresql
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/haraka/haraka-plugin-rcpt-postgresql.svg)](https://greenkeeper.io/)
+
 Validates the rcpt_to addresses (recipient addresses) by connecting to a PostgreSQL database.
 
 ## Install
