@@ -1,11 +1,12 @@
 {
   "name": "haraka-plugin-rcpt-postgresql",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Haraka plugin that validates recipients against a PostgreSQL database",
   "main": "index.js",
   "scripts": {
     "test": "mocha",
     "lint": "./node_modules/.bin/eslint *.js test/*.js",
+    "lintfix": "./node_modules/.bin/eslint --fix *.js test/*.js",
     "cover": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha"
   },
   "repository": {
@@ -32,6 +33,7 @@
   },
   "devDependencies": {
     "eslint": "*",
+    "eslint-plugin-haraka": "*",
     "haraka-test-fixtures": "*",
     "mocha": "*"
   }
