@@ -2,7 +2,7 @@
 var assert   = require('assert');
 var fixtures = require('haraka-test-fixtures');
 
-describe('rcpt-postgresql', function() {
+describe('rcpt-postgresql', function () {
     it('loads', function (done) {
         var plugin = new fixtures.plugin('rcpt-postgresql');
         // console.log(plugin);
