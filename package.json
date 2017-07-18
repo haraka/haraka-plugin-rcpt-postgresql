@@ -29,7 +29,7 @@
   "homepage": "https://github.com/haraka/haraka-plugin-rcpt-postgresql#readme",
   "dependencies": {
     "haraka-constants": "*",
-    "pg": "^6.1.0"
+    "pg": "^7.0.0"
   },
   "devDependencies": {
     "eslint": "*",
