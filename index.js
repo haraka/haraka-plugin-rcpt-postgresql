@@ -4,16 +4,16 @@
  * Plugin to validate the email recipient via a posgresql database.
  */
 
-var pg        = require('pg');
-var util      = require('util');
+const pg        = require('pg');
+const util      = require('util');
 
-var constants = require('haraka-constants');
+const constants = require('haraka-constants');
 
 exports.register = function () {
     this.logdebug("Initializing rcpt_to postgresql plugin.");
-    var config = this.config.get('rcpt-postgresql.json');
+    const config = this.config.get('rcpt-postgresql.json');
 
-    var dbConfig = {
+    const dbConfig = {
         user: config.user,
         database: config.database,
         password: config.password,
@@ -39,7 +39,7 @@ exports.register = function () {
 };
 
 exports.hook_rcpt = function (next, connection, params) {
-    var rcpt = params[0];
+    const rcpt = params[0];
 
     this.logdebug("Checking validity of " + util.inspect(params[0]));
 
@@ -61,7 +61,7 @@ exports.shutdown = function () {
 
 
 exports.is_user_valid = function (userID, callback) {
-    var plugin = this;
+    const plugin = this;
 
     plugin.pool.connect(function (conErr, client, done) {
         if (conErr) {
