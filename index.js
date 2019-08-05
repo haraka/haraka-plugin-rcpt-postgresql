@@ -47,7 +47,8 @@ exports.hook_rcpt = function (next, connection, params) {
         if (isValid) {
             connection.logdebug("Valid email recipient. Continuing...", this);
             next();
-        } else {
+        }
+        else {
             connection.logdebug("Invalid email recipient. DENY email receipt.", this);
             next(constants.DENY, "Invalid email address.");
         }
